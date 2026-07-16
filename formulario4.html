@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="estilo3.css">
+</head>
+<body>
+    <table width="100%">
+        <tr>
+            <td class="header-left">Não é associado? Faça seu cadastro</td>
+            <td class="header-right"></td>
+        </tr>
+    </table>
+
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+        </div>
+
+        <div class="form-group">
+            <label for="nome_completo">Nome Completo:</label>
+            <input type="text" id="nome_completo" name="nome_completo" required>
+        </div>
+
+        <div class="form-group">
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="website">Web Site:</label>
+            <input type="url" id="website" name="website">
+        </div>
+
+        <div class="form-group">
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" required>
+        </div>
+
+        <div class="form-group">
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro" name="bairro" required>
+        </div>
+
+        <div class="form-group">
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" required>
+        </div>
+
+        <div class="form-group">
+            <label for="uf">UF:</label>
+            <select id="uf" name="uf" required>
+                <option value="">Selecione</option>
+                <option value="AC">AC</option>
+                <option value="AL">AL</option>
+                <option value="AP">AP</option>
+                <option value="AM">AM</option>
+                <option value="BA">BA</option>
+                <option value="CE">CE</option>
+                <option value="DF">DF</option>
+                <option value="ES">ES</option>
+                <option value="GO">GO</option>
+                <option value="MA">MA</option>
+                <option value="MT">MT</option>
+                <option value="MS">MS</option>
+                <option value="MG">MG</option>
+                <option value="PA">PA</option>
+                <option value="PB">PB</option>
+                <option value="PR">PR</option>
+                <option value="PE">PE</option>
+                <option value="PI">PI</option>
+                <option value="RJ">RJ</option>
+                <option value="RN">RN</option>
+                <option value="RS">RS</option>
+                <option value="RO">RO</option>
+                <option value="RR">RR</option>
+                <option value="SC">SC</option>
+                <option value="SP">SP</option>
+                <option value="SE">SE</option>
+                <option value="TO">TO</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" name="cep" required>
+        </div>
+
+        <div class="form-group">
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+        </div>
+
+        <div class="form-group">
+            <label for="fax">Fax:</label>
+            <input type="tel" id="fax" name="fax">
+        </div>
+
+        <div class="form-group">
+            <label>Sexo:</label>
+            <label><input type="radio" name="sexo" value="masculino" required> Masculino</label>
+            <label><input type="radio" name="sexo" value="feminino"> Feminino</label>
+        </div>
+
+        <div class="form-group">
+            <label for="estado_civil">Estado Civil:</label>
+            <select id="estado_civil" name="estado_civil" required>
+                <option value="solteiro">Solteiro</option>
+                <option value="casado">Casado</option>
+                <option value="viuvo">Viúvo</option>
+                <option value="divorciado">Divorciado</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="login">Login:</label>
+            <input type="text" id="login" name="login" required>
+        </div>
+
+        <div class="form-group">
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+        </div>
+
+        <div class="form-group">
+            <label for="data_nascimento">Data de Nascimento:</label>
+            <input type="date" id="data_nascimento" name="data_nascimento" required>
+        </div>
+
+        <div class="form-group">
+            <label>Deseja receber informações sobre:</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="interesses[]" value="tecnologia"> Tecnologia</label>
+                <label><input type="checkbox" name="interesses[]" value="esportes"> Esportes</label>
+                <label><input type="checkbox" name="interesses[]" value="automoveis"> Automóveis</label>
+                <label><input type="checkbox" name="interesses[]" value="culinaria"> Culinária</label>
+                <label><input type="checkbox" name="interesses[]" value="politica"> Política</label>
+                <label><input type="checkbox" name="interesses[]" value="policial"> Policial</label>
+                <label><input type="checkbox" name="interesses[]" value="tempo"> Tempo</label>
+                <label><input type="checkbox" name="interesses[]" value="cultura"> Cultura</label>
+                <label><input type="checkbox" name="interesses[]" value="economia"> Economia</label>
+                <label><input type="checkbox" name="interesses[]" value="jogos"> Jogos</label>
+                <label><input type="checkbox" name="interesses[]" value="educacao"> Educação</label>
+                <label><input type="checkbox" name="interesses[]" value="viagem"> Viagem</label>
+                <label><input type="checkbox" name="interesses[]" value="empregos"> Empregos</label>
+                <label><input type="checkbox" name="interesses[]" value="moda"> Moda e Estilo</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label><input type="checkbox" name="regras" required> Li as regras de cadastro e autorizo a criação do usuário.</label>
+        </div>
+
+        <div class="buttons">
+            <input type="submit" value="Confirmar">
+            <input type="reset" value="Retornar">
+        </div>
+    </form>
+</body>
+</html>
