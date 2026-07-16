@@ -1,51 +1,73 @@
 body{
-    background-color: rgb(199, 199, 175);
-    margin: 0px;
-}
-
-header{
-    background-color: rgb(14, 14, 167);
-    color: rgb(255, 255, 255);
-    height: 50px;
-    padding-top: 40px;
-    padding-left: 20px;
-}
-
-h1{
-    margin: 0px;
-}
-
-p{
-    text-align: center;
-}
-
-#principal{
-    width: 800px;
-    margin: auto;
+    font-family: cursive;
 }
 
 figure{
-    background-color: rgb(255, 255, 255);
     width: 300px;
-    margin: 15px auto;
-    border: 1px solid #91aad9;
-    padding: 10px;
+    margin: auto;
+    box-shadow: 5px 5px 10px #000;
+    border-radius: 20px;
+
 }
 
-figure img{
-width: 300px;
+figure>img{
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+h1, .dist{
+    display: inline-block;
+    width: 49%;
+}
+
+h1{
+    font-size: 20pt;
+    margin: 0px;
+    padding: 0px;
+}
+
+.dist img{
+    vertical-align: middle;
+}
+
+.dist{
+    text-align: right;
+}
+
+.estrelas img{
+    width: 100px;
 }
 
 figcaption{
-    text-align: center;
-    font-style: italic;
-    padding: 5px;
+    padding: 10px;
 }
 
-footer{
-    background-color: rgb(14, 14, 59);
-    color: white;
-    height: 50px;
-    padding: 10px;
+.horario *{
+    display: inline-block;
+    width: 65px;
+    line-height: 30px;
+}
+
+.clock{
+    display: inline-block;
+    width: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.horario{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.reserva{
+    font-size: 20pt;
+    color: blue;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.dias{
     text-align: center;
 }
