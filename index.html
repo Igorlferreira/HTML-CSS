@@ -1,25 +1,193 @@
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-    <nav>
-        <a href="index.html">home</a>
-        <a href="receita.html">receita</a>
-        <a href="video.html">video</a>
-        <a href="contato.html">contato</a>
-    </nav>
-    <main>
-    <figure>
-        <img src="imagens/brigadeiro.jpg">
-        <figcaption>Brigadeiro de panela</figcaption>
-    </figure>
-    </main>
-    <footer>
-        receita de brigadeiro
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="icons8-bootstrap-color-32.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exercício Bootstrap</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+    <script src="bootstrap.min.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+</head>
+
+<body>
+    <header id="idheader" class="container-fluid">
+        <section class="row">
+            <div class="col-sm-6 col-xs-12" style="background-color:rgb(27, 100, 27);">
+                Alcides T. Barboza Jr.
+            </div>
+            <nav class="col-sm-6" style="background-color:rgb(0, 0, 0)">
+                <a href="#inicio">Início</a> &nbsp;
+                <a href="#portfolio">Portfólio</a> &nbsp;
+                <a href="#servicos">Serviços</a> &nbsp;
+                <a href="#sobre">Sobre</a> &nbsp;
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#ExemploDeCollapse">Mais</button>
+            </nav>
+        </section>
+    </header>
+
+    <div class="collapse" id="ExemploDeCollapse">
+        <div class="bg-primary w-75 m-5 border rounded shadow h-100">
+            <div class="card card-body bg-primary border rounded shadow">
+                <br>
+                <h5 class="card-title">Desenvolvedor</h5>
+                <section>
+                    <h3>Sistemas para Web, apps, jogos e mais.</h3>
+                </section>
+                <br>
+                <a href="http://www.cruzeirodosul.edu.br" class="bg-primary">Universidade Cruzeiro do Sul</a>
+                <br>
+            </div>
+        </div>
+    </div>
+
+    <a id="irTopo" href="#idheader" class="btn btn-primary">^topo</a>
+
+    <section id="portfolio">
+        <div class="container-fluid">
+            <div class="row">
+                <h3 class="col-sm4">Portfólio</h3>
+                <p class="fa fa-cubes">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dolore sed esse iure et animi quis
+                    molestiae non quisquam in. Dolore deleniti quaerat illum praesentium aperiam enim adipisci hic
+                    veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dolore sed esse iure et
+                    animi quis molestiae non quisquam in. Dolore deleniti quaerat illum praesentium aperiam enim
+                    adipisci hic
+                    veniam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dolore sed esse iure et
+                    animi quis molestiae non quisquam in. Dolore deleniti quaerat illum praesentium aperiam enim
+                    adipisci hic veniam.
+                </p>
+            </div>
+        </div>        
+    </section>
+
+    <br>
+
+    <div class="row align-items-center">
+        <div class="row">
+            <img class="col-sm-2 col-xs-12" src="img/shader.jpg">
+            <img class="col-sm-2 col-xs-12" src="img/tabuleiro.jpg">
+            <img class="col-sm-1 col-xs-12" src="img/jogo1.png">
+            <img class="col-sm-1 col-xs-12" src="img/app.webp">
+            <img class="col-sm-2 col-xs-12" src="img/tabuleiro.jpg">
+            <img class="col-sm-1 col-xs-12" src="img/jogo1.png">
+            <img class="col-sm-2 col-xs-12" src="img/shader.jpg">
+            <img class="col-sm-1 col-xs-12" src="img/app.webp">
+        </div>
+    </div>
+
+    <br>
+    <hr class="estilolinha">
+
+    <section id="servicos">
+        <h3 class="title">Serviços</h3>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4">
+                    <i class="fa fa-code"></i>
+                    <h4>Programação</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum
+                        ultrices
+                        vitae pulvinar velit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et
+                        ipsum bibendum ultrices vitae pulvinar velit.
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <i class="fa fa-cubes"></i>
+                    <h4>Sistemas</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum
+                        ultrices
+                        vitae pulvinar velit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et
+                        ipsum bibendum ultrices vitae pulvinar velit.</p>
+                </div>
+                <div class="col-sm-4">
+                    <i class="fa fa-gamepad"></i>
+                    <h4>Games</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum
+                        ultrices
+                        vitae pulvinar velit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et
+                        ipsum bibendum ultrices vitae pulvinar velit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="estilolinha">
+
+    <section id="sobre">
+        <h3 class="title">Conhecimentos</h3>
+        <p class="quote">
+            Passe o mouse pela figura abaixo, para conhecer os %
+            de conhecimento em cada assunto mostrado.
+        </p>
+
+        <div id="view">
+            <span class="fa fa-eye"></span>
+        </div>
+
+        <section class="container-fluid" id="skills">
+            <div class="row">
+                <div class="col-sm-6" id="coluna1skills">
+                    <div>
+                        JavaScript
+                        <div class="barra">
+                            <span>90%</span>
+                        </div>
+                    </div>
+                    <div>
+                        HTML
+                        <div class="barra">
+                            <span>100%</span>
+                        </div>
+                    </div>
+                    <div>
+                        CSS
+                        <div class="barra">
+                            <span>30%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="XXXX" id="coluna2skills">
+                    <div>
+                        C++
+                        <div class="barra">
+                            <span>100%</span>
+                        </div>
+                    </div>
+                    <div>
+                        Python
+                        <div class="barra">
+                            <span>100%</span>
+                        </div>
+                    </div>
+                    <div>
+                        Java
+                        <div class="barra">
+                            <span>25%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <br><br>
+    <footer class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col col-xs-3"></div>
+            <div class="col col-xs-3"><a href="#"><i class="fa fa-twitter-square"></i></a></div>
+            <div class="col col-xs-1"><a href="#"><i class="fa fa-facebook-square"></i></a></div>
+            <div class="col col-xs-1"><a href="#"><i class="fa fa-snapchat-square"></i></a></div>
+            <div class="col col-xs-2"><a href="#"><i class="fa fa-pinterest-square"></i></a></div>
+            <div class="col col-xs-1"><a href="#"><i class="fa fa-github-square"></i></a></div>
+            <div class="col col-xs-3"></div>
+        </div>
+        <p class="XXXX d-flex justify-content-center">Desenvolvido por StudiosWeb</p>
     </footer>
+    <br><br><br>
 </body>
+
 </html>

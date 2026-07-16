@@ -1,0 +1,148 @@
+html {
+    scroll-behavior: smooth;
+    font-family: Calibri;
+}
+
+header {
+  height: 70px;
+  padding-top: 10px;
+}
+
+header, header nav, header div {
+    color: white;
+    background:black;
+    font-size: 1.0em;
+}
+
+hr.estilolinha {
+    border: 2px solid green;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px gray;
+  }
+
+header div {
+    font-size: 1.05em;
+}
+
+a, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+#irTopo {
+    position:fixed;
+    top: 500px;
+    right:20px;
+    background-color: black 
+    border-radius 10px;
+}
+
+#portfolio, #sobre, #servicos {
+    width: 100%;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.title{
+    color: #414a4f;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+#servicos h3 {
+    text-align: center;
+}
+
+#servicos i{
+    color: #2196f3;
+    font-size: 40pt;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#servicos h4{
+    color: #555;
+    font-size: 18pt;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#sobre h3, #sobre p {
+    text-align: center;
+}
+
+#sobre #view {
+    text-align: center;
+    color: #2196f3;
+    font-size: 40pt;
+    margin-bottom: 15px;
+}
+
+#skills div{
+    margin: auto;
+    text-align: center;
+}
+
+.barra{
+    background-color: #ccc;
+    height: 30px;
+    width: 100%;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+#skills span{
+    display: none;
+}
+
+@keyframes porcentagem {
+    0%{
+        width: 0%;
+    }
+}
+
+#view:hover + section div span {  
+    /* o + afetará a primeira section depois do #view com descendente div span dentro */
+    animation: porcentagem 2s;
+    height: 25px;
+    border-radius: 15px;
+    color: #fff;
+    background-color: #7a0909;
+    border: 3px solid #ccc;
+    padding: 0;
+    display: block;
+}
+
+#skills div:nth-child(1) span{  width: 90%; }
+#skills div:nth-child(2) span{ width: 100%; }
+#skills div:nth-child(3) span{ width: 30%;  }
+#skills div:nth-child(4) span{ width: 50%; }
+#skills div:nth-child(5) span{ width: 25%; }
+#skills div:nth-child(6) span{ width: 100%; }
+
+.barra{
+    background-color: #ccc;
+    height: 30px;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+footer {
+    color: #fff;
+    background-color: #444444;
+    padding: 10px 0px;
+    width: 100%;
+}
+
+footer div {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+footer a, footer a:visited {
+    color: white;
+    text-decoration: none;
+}
