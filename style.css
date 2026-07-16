@@ -1,0 +1,297 @@
+header {
+    background-color: #fCfCfC;
+}
+
+.conteiner {
+    /*
+        configurar o layout com o Flexbox
+    */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.homenav {
+    /*
+        configurar o layout com o Flexbox
+    */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 65%;
+    height: 50px;
+}
+
+#logoinicial {
+    display: none;
+    
+}
+
+#person, #idcontato {
+    /*
+        configurar o layout com o Flexbox
+    */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+#person { background-color: #f1f0e4; }
+
+#idcontato { background-color: #e6f4cec7; }
+
+#idcontato>* {
+    width: 80%;
+}
+
+#person #personId {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /*
+        configurar o layout com o Flexbox
+    */
+}
+
+#person i, #person h1 {
+    font-size: 30px;
+    margin-right: 25px;
+    color: brown;
+}
+
+.homenav, .homenav a {
+    color: gray;
+    text-decoration: none;
+}
+
+section article {
+    display: flex;
+    flex-direction: row;
+    /*
+        configurar o layout com o Flexbox
+    */
+}
+
+section article figure, section article div {
+    width: 50%;
+    margin: 5%;
+}
+
+#cooking-section {
+    background-color: #48172d;
+    color: #c09ead;
+}
+
+#restaurant-section {
+    background-color: #fbab18;
+    color: #96591d;
+}
+
+#fruits-section {
+    background-color: lightgray;
+    color: #898670;
+}
+
+#vegetables-section {
+    background-color: #879c29;
+    color: #f2efdc;
+}
+
+.meufooter {
+    width: 100%;
+    height: auto;
+}
+
+.meufooter nav, .meufooter form, .meufooter p, .meufooter div {
+    width: 90%;
+    margin: auto;
+}
+
+.meufooter nav {
+    justify-content: space-around;
+}
+
+.meufooter p {
+    font-size: x-small;
+}
+
+.meufooter #redes a {
+    color: white;
+    text-align: center;
+    line-height: 1.9;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 26px;
+}
+
+footer #redes .facebook {
+    background-color: #3b5a9b;
+}
+
+footer #redes .twitter {
+    background-color: #1c9ac7;
+}
+
+footer #redes .pinterest {
+    background-color: #d11e2e;
+}
+
+.biografia {
+   width: 95%;
+}
+
+.biografia .icon {
+    width: 40px;
+    height: 40px;
+    background-color: #f16a54;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    margin-right: 20px;
+    padding: 5px 0px;
+    color: #fff;
+}
+
+.bioconteiner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /*
+        configurar o layout com o Flexbox
+    */
+}
+
+.bioconteiner img, .bioconteiner div {
+    width: 46%;
+}
+
+.biodetail li {
+    list-style-type: none;
+}
+
+.biodetail li {
+    margin: 5px 5px;
+}
+
+.lista-receitas {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.lista-receitas>article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /*
+        configurar o layout com o Flexbox
+    */
+}
+
+.lista-receitas .receita-meta {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    /*
+        configurar o layout com o Flexbox
+    */
+}
+
+.lista-receitas>article>img, .lista-receitas>article>div {
+    width: 40%;
+}
+
+.lista-receitas>article {
+    margin: 5px;
+}
+
+.recipe-title {
+    font-size: 26px;
+    color: #5d0b12;
+}
+
+.receita {
+    background-color: rgba(248, 235, 211, 0.705);
+    padding: 15px;
+    border: solid 3px orange;
+    border-radius: 150px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.receita img {
+    border-radius: 150px;
+}
+
+@media screen and (max-width: 768px) {
+    #person {
+        display: none;
+    }
+
+    .conteiner {
+        height: 140px;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        background-color: #f1f0e4;
+        width: 100%;
+    }
+
+    #logoinicial, .homenav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    #logoinicial {
+        justify-content: center;
+    }
+
+    #logoinicial i, #logoinicial h1 {
+        font-size: 30px;
+        margin-right: 25px;
+        color: brown;
+    }
+
+    section article {
+        flex-wrap: wrap;
+    }
+
+    section article figure,     section article div {
+        width: 100%;
+    }
+
+    .bioconteiner {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        /*
+            configurar o layout com o Flexbox
+        */
+        width: 100%;
+        height: auto;
+    }
+
+    .bioconteiner img, .bioconteiner div {
+        width: 100%;
+    }
+
+    .lista-receitas>article>img, .lista-receitas>article>div {
+        width: 100%;
+    }
+}

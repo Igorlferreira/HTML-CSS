@@ -2,192 +2,138 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="utf-8">
-    <link rel="shortcut icon" href="icons8-bootstrap-color-32.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Exercício Bootstrap</title>
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
-    
-    <link rel="stylesheet" href="styles.css">
-    <script src="bootstrap.min.js"></script>
-    <link rel="stylesheet" href="bootstrap.min.css" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+	<title>Chef-Bootstrap</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+	<!--
+		referenciar os arquivos CSS do Font Awesome, do Bootstrap e o styles.css próprio
+	    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+	 -->
 </head>
 
 <body>
-    <header id="idheader" class="container-fluid">
-        <section class="row">
-            <div class="col-sm-6 col-xs-12" style="background-color:rgb(27, 100, 27);">
-                Alcides T. Barboza Jr.
-            </div>
-            <nav class="col-sm-6" style="background-color:rgb(0, 0, 0)">
-                <a href="#inicio">Início</a> &nbsp;
-                <a href="#portfolio">Portfólio</a> &nbsp;
-                <a href="#servicos">Serviços</a> &nbsp;
-                <a href="#sobre">Sobre</a> &nbsp;
-                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#ExemploDeCollapse">Mais</button>
-            </nav>
-        </section>
-    </header>
+	<main>
+		<header>
+			<div class="conteiner" class="p-4">
+				<div id="logoinicial">
+					<i class="fas fa-bread-slice"></i>
+					<h1>Gru da Silva</h1>
+				</div>
+				<nav class="homenav">
+					<a href="index.html">Início</a> |
+					<a href="sobre.html">Sobre</a> |
+					<a href="contato.html">Contato</a> |
+					<a href="receitas.html">Receitas</a> |
+					<a href="atuacao.html">Atuação</a>
+				</nav>
+			</div>
+		</header>
 
-    <div class="collapse" id="ExemploDeCollapse">
-        <div class="bg-primary w-75 m-5 border rounded shadow h-100">
-            <div class="card card-body bg-primary border rounded shadow">
-                <br>
-                <h5 class="card-title">Desenvolvedor</h5>
-                <section>
-                    <h3>Sistemas para Web, apps, jogos e mais.</h3>
-                </section>
-                <br>
-                <a href="http://www.cruzeirodosul.edu.br" class="bg-primary">Universidade Cruzeiro do Sul</a>
-                <br>
-            </div>
-        </div>
-    </div>
+		<section id="person">
+			<div id="personId">
+				<i class="fas fa-bread-slice"></i>
+				<h1>Gru da Silva - CEO & MasterChef</h1>
+			</div>
+			<span>Chef Profissional</span>
+		</section>
 
-    <a id="irTopo" href="#idheader" class="btn btn-primary">^topo</a>
+		<section id="cooking-section">
+			<article>
+				<figure>
+					<img src="images/cooking.png" alt="cooking">
+				</figure>
+				<div class="conteudo">
+					<h1 class="category-title">Lorem ipsum dolor sit</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem aperiam ab, rem dignissimos
+						ducimus soluta culpa veritatis consequuntur asperiores, ad cum, ipsum quidem harum error dolores
+						quia eius quae.</p>
+					<a href="#" class="btn btn-warning">Leia mais</a>
+				</div>
+			</article>
+		</section>
 
-    <section id="portfolio">
-        <div class="container-fluid">
-            <div class="row">
-                <h3 class="col-sm4">Portfólio</h3>
-                <p class="fa fa-cubes">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dolore sed esse iure et animi quis
-                    molestiae non quisquam in. Dolore deleniti quaerat illum praesentium aperiam enim adipisci hic
-                    veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dolore sed esse iure et
-                    animi quis molestiae non quisquam in. Dolore deleniti quaerat illum praesentium aperiam enim
-                    adipisci hic
-                    veniam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dolore sed esse iure et
-                    animi quis molestiae non quisquam in. Dolore deleniti quaerat illum praesentium aperiam enim
-                    adipisci hic veniam.
-                </p>
-            </div>
-        </div>        
-    </section>
+		<section id="restaurant-section">
+			<article>
+				<figure>
+					<img src="images/restaurant.png" alt="restaurant" class="img-fluid">
+				</figure>
+				<div class="conteudo">
+					<h1 class="category-title">Lorem ipsum dolor sit</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem aperiam ab, rem dignissimos
+						ducimus soluta culpa veritatis consequuntur asperiores, ad cum, ipsum quidem harum error dolores
+						quia eius quae.</p>
+					<a href="#" class="btn btn-success">Leia mais</a>
+				</div>
+			</article>
+		</section>
 
-    <br>
+		<section id="fruits-section">
+			<article>
+				<figure>
+					<img src="images/fruits.png" alt="fruits" class="img-fluid">
+				</figure>
+				<div class="conteudo">
+					<h1 class="category-title">Lorem ipsum dolor sit</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem aperiam ab, rem dignissimos
+						ducimus soluta culpa veritatis consequuntur asperiores, ad cum, ipsum quidem harum error dolores
+						quia eius quae.</p>
+					<a href="#" class="btn btn-primary">Leia mais</a>
+				</div>
+			</article>
+		</section>
 
-    <div class="row align-items-center">
-        <div class="row">
-            <img class="col-sm-2 col-xs-12" src="img/shader.jpg">
-            <img class="col-sm-2 col-xs-12" src="img/tabuleiro.jpg">
-            <img class="col-sm-1 col-xs-12" src="img/jogo1.png">
-            <img class="col-sm-1 col-xs-12" src="img/app.webp">
-            <img class="col-sm-2 col-xs-12" src="img/tabuleiro.jpg">
-            <img class="col-sm-1 col-xs-12" src="img/jogo1.png">
-            <img class="col-sm-2 col-xs-12" src="img/shader.jpg">
-            <img class="col-sm-1 col-xs-12" src="img/app.webp">
-        </div>
-    </div>
+		<section id="vegetables-section">
+			<article>
+				<figure>
+					<img src="images/vegetables.png" alt="vegetables" class="img-fluid">
+				</figure>
+				<div class="conteudo">
+					<h1 class="category-title">Lorem ipsum dolor sit</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem aperiam ab, rem dignissimos
+						ducimus soluta culpa veritatis consequuntur asperiores, ad cum, ipsum quidem harum error dolores
+						quia eius quae.</p>
+					<a href="#" class="btn btn-success">Leia mais</a>
+				</div>
+			</article>
+		</section>
+		</section>
 
-    <br>
-    <hr class="estilolinha">
+		<br>
 
-    <section id="servicos">
-        <h3 class="title">Serviços</h3>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-4">
-                    <i class="fa fa-code"></i>
-                    <h4>Programação</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum
-                        ultrices
-                        vitae pulvinar velit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et
-                        ipsum bibendum ultrices vitae pulvinar velit.
-                    </p>
-                </div>
-                <div class="col-sm-4">
-                    <i class="fa fa-cubes"></i>
-                    <h4>Sistemas</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum
-                        ultrices
-                        vitae pulvinar velit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et
-                        ipsum bibendum ultrices vitae pulvinar velit.</p>
-                </div>
-                <div class="col-sm-4">
-                    <i class="fa fa-gamepad"></i>
-                    <h4>Games</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum
-                        ultrices
-                        vitae pulvinar velit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et
-                        ipsum bibendum ultrices vitae pulvinar velit.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+		<footer class="meufooter">
+			<div>
+				<nav class="homenav">
+					<a href="index.html">Início</a> |
+					<a href="sobre.html">Sobre</a> |
+					<a href="contato.html">Contato</a> |
+					<a href="receitas.html">Receitas</a>
+				</nav>
+				<br>
+				<h2 style="text-align:center;" class="my-5">Inscrição</h2>
+				<form class="border shadow round p-5 my-5">
+					<div class="form-group">
+						<input type="email" class="form-control" id="idemail" placeholder="Informe seu e-mail">
+						<br>
+						<button type="submit" class="btn btn-primary">Enviar</button>
+					</div>
+				</form>
+				<br>
+				<div id="redes" class="homenav">
+					<a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+					<a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+					<a href="#" class="pinterest"><i class="fab fa-pinterest"></i></a>
+				</div>
+				<br>
+				<p class="homenav">&copy; 2024 - GruFood. Designed by StudioXYZ. All right reserved</p>
+			</div>
+		</footer>
 
-    <hr class="estilolinha">
+		<br><br><br>
 
-    <section id="sobre">
-        <h3 class="title">Conhecimentos</h3>
-        <p class="quote">
-            Passe o mouse pela figura abaixo, para conhecer os %
-            de conhecimento em cada assunto mostrado.
-        </p>
-
-        <div id="view">
-            <span class="fa fa-eye"></span>
-        </div>
-
-        <section class="container-fluid" id="skills">
-            <div class="row">
-                <div class="col-sm-6" id="coluna1skills">
-                    <div>
-                        JavaScript
-                        <div class="barra">
-                            <span>90%</span>
-                        </div>
-                    </div>
-                    <div>
-                        HTML
-                        <div class="barra">
-                            <span>100%</span>
-                        </div>
-                    </div>
-                    <div>
-                        CSS
-                        <div class="barra">
-                            <span>30%</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="XXXX" id="coluna2skills">
-                    <div>
-                        C++
-                        <div class="barra">
-                            <span>100%</span>
-                        </div>
-                    </div>
-                    <div>
-                        Python
-                        <div class="barra">
-                            <span>100%</span>
-                        </div>
-                    </div>
-                    <div>
-                        Java
-                        <div class="barra">
-                            <span>25%</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </section>
-    <br><br>
-    <footer class="container">
-        <div class="row d-flex justify-content-center">
-            <div class="col col-xs-3"></div>
-            <div class="col col-xs-3"><a href="#"><i class="fa fa-twitter-square"></i></a></div>
-            <div class="col col-xs-1"><a href="#"><i class="fa fa-facebook-square"></i></a></div>
-            <div class="col col-xs-1"><a href="#"><i class="fa fa-snapchat-square"></i></a></div>
-            <div class="col col-xs-2"><a href="#"><i class="fa fa-pinterest-square"></i></a></div>
-            <div class="col col-xs-1"><a href="#"><i class="fa fa-github-square"></i></a></div>
-            <div class="col col-xs-3"></div>
-        </div>
-        <p class="XXXX d-flex justify-content-center">Desenvolvido por StudiosWeb</p>
-    </footer>
-    <br><br><br>
+	</main>
 </body>
 
 </html>
