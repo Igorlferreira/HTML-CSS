@@ -1,0 +1,51 @@
+body{
+    background-color: rgb(199, 199, 175);
+    margin: 0px;
+}
+
+header{
+    background-color: rgb(14, 14, 167);
+    color: rgb(255, 255, 255);
+    height: 50px;
+    padding-top: 40px;
+    padding-left: 20px;
+}
+
+h1{
+    margin: 0px;
+}
+
+p{
+    text-align: center;
+}
+
+#principal{
+    width: 800px;
+    margin: auto;
+}
+
+figure{
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    margin: 15px auto;
+    border: 1px solid #91aad9;
+    padding: 10px;
+}
+
+figure img{
+width: 300px;
+}
+
+figcaption{
+    text-align: center;
+    font-style: italic;
+    padding: 5px;
+}
+
+footer{
+    background-color: rgb(14, 14, 59);
+    color: white;
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+}
